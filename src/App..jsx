@@ -46,7 +46,7 @@ function App() {
 
         const newRecord = {
             type: type,
-            tittle: title,
+            title: title,
             // amount(금액)은 input에서 들어올 때 string 으로 들어옴
             // 이걸 우리는 number 타입으로 변환해서 저장해야 함
             amount: parseAmount,
