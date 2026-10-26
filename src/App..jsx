@@ -74,7 +74,7 @@ function App() {
 
     }, 0);
 
-    const totalExpense =list.reduce((sum, item) => {
+    const totalExpense = list.reduce((sum, item) => {
         // type이 expense의 것들의 합계
         return item.type === "expense" ? sum + item.amount : sum;
     }, 0);
@@ -163,8 +163,8 @@ function App() {
             list라고 하는 array (state)를 가지고 하나의 값을 구하는 행위
             => list.redouce() => 얘의 코드가 길어지겠다.
             */}
-            <h3>수입 : {totalIncome.toLocaleString()} 0원 / 지출 : {totalExpense.toLocaleString()}0원</h3>
-            <h3>잔액 : {balance.toLocaleString()} 0원</h3>
+            <h3>수입 : {totalIncome.toLocaleString()} 원 / 지출 : {totalExpense.toLocaleString()} 원</h3>
+            <h3>잔액 : {balance.toLocaleString()} 원</h3>
         </>
     );
 }
